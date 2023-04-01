@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
             <!--logo rpm principal-->
-            <a href="index.html"> <img src="/imagenes-logos/rpm-logo.png" width="200px" alt="rpm">
+            <a href="index.html"> <img src="/imagenes-logos/rpm-logo.png" class="rpm-logo" width="150px" alt="rpm">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -31,25 +31,71 @@
                 </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    
                     <li class="nav-item"><a class="nav-link" href="#services">Funciones</a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Quienes Somos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">Experiencias</a></li>
                     <li class="nav-item"><a class="nav-link" href="#team">Nuestro Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Administrador</a></li>
+
+                   <!--<a class="nav-link"> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Administrador</button> </a></li>--> <li class="nav-item"> 
                     <li class="nav-item">
-                        <a class="nav-link"> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Administrador</button> </a>
+                       <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.calimoto.calimoto&hl=es&gl=US&pli=1" target="_blank" style="font-family:Arial, Helvetica, sans-serif"> Descarga nuestra app</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Masthead-->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            
+            <img src="/imagenes-logos/carrousel1.jpg" width="80%" class="d-block w-100" alt="...">
+        
+            <div class="carousel-caption d-none d-md-block">
+              <h1 style="text-shadow: 1px 1px 2px black; color: aliceblue;">SOMOS RPM</h1>
+              <p style="color: aliceblue; text-shadow: 1px 1px 2px black; font-size: large;">¡La mejor aplicacion para Moto-Viajeros en Colombia!</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/imagenes-logos/carrousel2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 style="text-shadow: 1px 1px 2px black; color: aliceblue;">MILES DE MOTOVIAJEROS POR TODA COLOMBIA</h1>
+              <p style="color: aliceblue; text-shadow: 1px 1px 2px black; font-size: large;">¿A que esperas para unirte a RPM?</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+           
+            <img src="/imagenes-logos/carrousel3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 style="color: aliceblue; text-shadow: 1px 1px 2px black;">CONOCE COLOMBIA</h1>
+                <p style="color: aliceblue; font-size: large; text-shadow: 1px 1px 2px black;">A través de nuestras rutas pensadas para que viajes de la mejor manera</p>
+              </div>
+          
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--
     <header class="masthead">
         <div class="container">
             <div class="masthead-subheading" style="font-size: 25px;">La mejor aplicación de viajes en moto</div>
             <div class="masthead-heading text-uppercase">¡Bienvenido, MotoViajero!</div>
             <a class="btn btn-primary btn-xl text-uppercase" href="https://play.google.com/store/apps/details?id=com.calimoto.calimoto&hl=es&gl=US&pli=1" target="_blank">Descarga nuestra app</a>
         </div>
-    </header>
+    </header> -->
     <!-- Services-->
     <section class="page-section" id="services">
         <div class="container">
@@ -131,7 +177,7 @@
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="/imagenes-logos/objetivos-RPM.avif" width="1000px" alt="..." />
+                            <img class="img-fluid" src="/imagenes-logos/objetivos-RPM.jpg" width="1000px" alt="..." />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Objetivos</div>
@@ -511,6 +557,10 @@
                 </div>
             </div>
         </div>
+        <br>
+        <center>
+            <img src="/imagenes-logos/rpm-logo.png" width="100px" alt="">
+        </center>
     </footer>
     <!-- Portfolio Modals-->
     <!-- Portfolio item 1 modal popup-->
@@ -594,7 +644,7 @@
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">Objetivos</h2>
                                 <p class="item-intro text-muted">Rutas Para Moteros</p>
-                                <img class="img-fluid d-block mx-auto" src="/imagenes-logos/objetivos-RPM.avif" width="60%" style="border-radius: 10px;" alt="imagen ilustrativa objetivos" />
+                                <img class="img-fluid d-block mx-auto" src="/imagenes-logos/objetivos-RPM.jpg" width="60%" style="border-radius: 10px;" alt="imagen ilustrativa objetivos" />
                                 <p style="text-align: justify;">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
                                     maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                              <!--<li>
@@ -616,7 +666,7 @@
             </div>
         </div>
     </div>
-    <!-- Portfolio item 4 modal popup-->
+    <!-- Portfolio item 4 modal popup
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -625,7 +675,8 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="modal-body">
-                                <!-- Project details-->
+                                 Project details-->
+                                 <!--
                                 <h2 class="text-uppercase">Project Name</h2>
                                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
@@ -650,7 +701,9 @@
             </div>
         </div>
     </div>
-    <!-- Portfolio item 5 modal popup-->
+    -->
+    <!--
+ Portfolio item 5 modal popup
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -659,7 +712,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="modal-body">
-                                <!-- Project details-->
+                                
                                 <h2 class="text-uppercase">Project Name</h2>
                                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
@@ -684,7 +737,9 @@
             </div>
         </div>
     </div>
+-->
     <!-- Portfolio item 6 modal popup-->
+    <!--
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -693,7 +748,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="modal-body">
-                                <!-- Project details-->
+                           
                                 <h2 class="text-uppercase">Project Name</h2>
                                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
@@ -717,7 +772,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
